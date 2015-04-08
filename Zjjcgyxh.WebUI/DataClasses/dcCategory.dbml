@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="KitTools.Zjjcgyxh.Test" Class="dcCategoryDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=www.zjjcgyxh.com;Initial Catalog=KitTools.Zjjcgyxh.Test;Persist Security Info=True;User ID=developer" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="KitTools_Zjjcgyxh_TestConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.t_Category" Member="t_Category">
+    <Type Name="t_Category">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(512)" CanBeNull="true" />
+      <Column Name="ParentId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FullPath" Type="System.String" DbType="VarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="IsSystem" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsDelete" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Creator" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LatestUpdateBy" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LatestUpdateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
